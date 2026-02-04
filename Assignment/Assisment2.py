@@ -1,0 +1,30 @@
+#TASK1: TAKING INPUT FORM THE USER WITH MULTIPLE OPTION TO CREATE THE
+#DRAWING LINE OVER THE IMAGE
+
+#OPTION1: LINE
+#OPTION2: CIRCLE
+#OPTION3: RECTANGLE
+#OPTION4: TEXT
+
+#THEN IF CHOOSE ANY OPTION THEN TAKES THE POINT (X1,X2)
+#FOR THE OUTPUT, ASK USER WANTED TO SAVE THE IMAGE(YES OR NO)
+# IF SAY YES THEN TAKES THE INPUT FOR THE FILE LOCATION THEN AFTER SAVE
+#IF NO QUIT THE PROGRAM
+
+import cv2
+
+# Load image
+img = cv2.imread("Assignment/python-image.png")
+
+if img is None:
+    print("Error: Image not found")
+    exit()
+
+print("""
+Choose any one option:
+1. Line
+2. Circle
+3. Rectangle
+4. Text
+""")
+
