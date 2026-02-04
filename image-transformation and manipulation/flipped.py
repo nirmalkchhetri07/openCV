@@ -1,5 +1,4 @@
 import cv2
-from django.template.defaultfilters import center
 
 image = cv2.imread("image-transformation and manipulation/python-image.png")
 
